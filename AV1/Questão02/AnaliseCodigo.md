@@ -1,4 +1,4 @@
-teração 1 (número 3): O valor vira 4 pós-incrementos. Não atende a nenhuma condição. (soma = 0)
+Interação 1 (número 3): O valor vira 4 pós-incrementos. Não atende a nenhuma condição. (soma = 0)
 
 Iteração 2 (número 7): O valor vira 8. Atende ao primeiro if (par e > 5). (soma = 0 + 8 = 8)
 
