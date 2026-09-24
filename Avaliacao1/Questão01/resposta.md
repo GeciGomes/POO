@@ -8,7 +8,7 @@ final (t2): Define uma constante. O valor de t2 é atribuído apenas uma vez e n
 c)
 Garante o encapsulamento da classe. Isso permite controlar e validar a leitura e a alteração dos dados, oculta os detalhes internos da implementação e impede que o estado do objeto seja modificado de forma indevida ou inconsistente por código externo.
 
-d) Modificadores de acesso
+d)
 public: O membro pode ser acessado por qualquer outra classe, independentemente do pacote.
 private: O membro é visível e acessível apenas dentro da própria classe em que foi declarado.
 protected: O membro é acessível por classes do mesmo pacote e por subclasses (mesmo que estejam em pacotes diferentes).
