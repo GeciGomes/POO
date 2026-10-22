@@ -7,7 +7,7 @@ public class Retangulo {
     // Construtor padrão (inicializa ambos os atributos com 1.0)
     public Retangulo() {
         this.largura = 1.0;
-        this.altura = 1.0;
+        this.altura = 2.0;
     }
 
     // Construtor com parâmetros
