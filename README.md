@@ -12,6 +12,6 @@ As soluções e os códigos desenvolvidos para a **Avaliação 01** estão organ
 
 ---
 
-### 📝 [Simulado POO Monitoria](./Simulado_POO_Monitoria)
+### 📝 [Simulado_Monitoria1](./Simulado_POO_Monitoria)
 As resoluções do simulado preparado pela monitoria se encontram no link abaixo:
 * 🔗 [Acessar pasta do Simulado](./Simulado_POO_Monitoria)
