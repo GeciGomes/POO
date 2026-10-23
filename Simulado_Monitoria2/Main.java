@@ -22,7 +22,8 @@ public class Main {
         carrinho.adicionar(stream);
         try {
             carrinho.adicionar(teclado, 1);
-            carrinho.adicionar(teclado, 10); // força EstoqueInsuficienteException
+            // Coloquei uma quantidade maior que o estoque para testar a exceção.
+            carrinho.adicionar(teclado, 10);
         } catch (EstoqueInsuficienteException e) {
             System.out.println(e.getMessage());
         }
@@ -35,6 +36,7 @@ public class Main {
         System.out.println("--- Tentativa 2: Cartão 6x, limite baixo ---");
         pedido.finalizar(new PagamentoCartao(6, 100.0));
 
+        // Os pontos só são somados quando o pagamento é aprovado.
         System.out.println("Pontos: " + cliente.getPontosFidelidade());
     }
 }

@@ -22,13 +22,15 @@ public class Pedido {
             double subtotal = carrinho.calcularTotal() + carrinho.calcularFreteTotal(cep);
 
             if (cliente instanceof ClienteVip) {
+                // O desconto do cliente VIP é aplicado sobre o total com frete.
                 double desc = ((ClienteVip) cliente).getPercentualDesconto();
                 subtotal -= subtotal * desc;
             }
 
-            double valorFinal = pagamento.calcularValorFinal(subtotal); // pode lançar recusa
+            double valorFinal = pagamento.calcularValorFinal(subtotal);
             pagamento.exibirComprovante(subtotal);
 
+            // Como chegou até aqui, o pagamento foi aprovado.
             cliente.adicionarPontos((int) (valorFinal / 10));
         } catch (PagamentoRecusadoException e) {
             System.out.println("Pagamento recusado");

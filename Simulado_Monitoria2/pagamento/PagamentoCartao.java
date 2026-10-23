@@ -14,9 +14,11 @@ public class PagamentoCartao implements Pagamento {
     @Override
     public double calcularValorFinal(double valor) {
         double total = valor;
+        // Acima de 3 parcelas, acrescento 8% ao valor.
         if (parcelas > 3) {
             total += valor * 0.08;
         }
+        // Se passar do limite, o pagamento não é aprovado.
         if (total > limite) {
             throw new PagamentoRecusadoException("Limite excedido: R$ " + total + " > R$ " + limite);
         }

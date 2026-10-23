@@ -15,6 +15,7 @@ public class CarrinhoDeCompras {
     }
 
     public void adicionar(Produto p, int quantidade) throws EstoqueInsuficienteException {
+        // Confiro o estoque antes de colocar os itens no carrinho.
         if (quantidade > p.getEstoque()) {
             throw new EstoqueInsuficienteException(p.getNome(), p.getEstoque());
         }
@@ -26,7 +27,8 @@ public class CarrinhoDeCompras {
     public double calcularTotal() {
         double total = 0;
         for (Produto p : itens) {
-            total += p.calcularPrecoFinal(); // polimorfismo, sem instanceof
+            // Cada tipo de produto calcula o próprio preço final.
+            total += p.calcularPrecoFinal();
         }
         return total;
     }
@@ -34,6 +36,7 @@ public class CarrinhoDeCompras {
     public double calcularFreteTotal(String cep) {
         double frete = 0;
         for (Produto p : itens) {
+            // Só os produtos que podem ser entregues têm frete.
             if (p instanceof Entregavel) {
                 frete += ((Entregavel) p).calcularFrete(cep);
             }
