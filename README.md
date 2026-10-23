@@ -6,12 +6,12 @@ Projetos e atividades desenvolvidos na disciplina de Programação Orientada a O
 
 ## 📁 Estrutura de Respostas
 
-### 📄 [Avaliação 01 (AV1)](./AV1)
+### 📄 [Avaliação 01 (AV1)](AV1)
 As soluções e os códigos desenvolvidos para a **Avaliação 01** estão organizados em pastas individuais por questão:
-* 🔗 [Acessar pasta da Avaliação 01](./AV1)
+* 🔗 [Acessar pasta da Avaliação 01](AV1)
 
 ---
 
 ### 📝 Simulados da Monitoria
-* 🔗 [Simulado 1](./Simulado1_Monitoria)
-* 🔗 [Simulado 2](./Simulado2_Monitoria)
+* 🔗 [Simulado 1](Simulado1_Monitoria)
+* 🔗 [Simulado 2](Simulado2_Monitoria)
